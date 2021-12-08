@@ -1,38 +1,166 @@
-.App {
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 100%;
+}
+
+.MainWrapper {
+  background-color: #08090a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.5em;
+  flex-flow: column wrap;
+}
+
+
+.MainPage {
+  min-width: 400px;
+  max-width: 900px;
+  width: 94vw;
+}
+
+.Header {
+  background-color: #6b82b1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  font-size: calc(1em + 1vmin);
+  color: white;
+
+}
+
+.Nav-li {
+  list-style: none;
+  padding: 10px;
+}
+
+.Nav-li a {
+  text-decoration: none;
+  color: #0e151d;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: rgb(174, 179, 212);
+}
+
+.Nav-li a:hover {
+  background: rgb(210, 213, 233);
+  transition: all ease-in-out 0.2s;
+}
+
+.Nav-li a:active,
+.Nav-li a.active {
+  background: rgb(255, 255, 255);
+  transition: all ease-in-out 0.2s;
+}
+
+
+.Nav-ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.OutletPages {
   text-align: center;
+  background-color: #3b455a;
+  font-size: calc(1em + 1vmin);
+  color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.Footer {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(0.8em + 1vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer a {
+  text-decoration: none;
+  color: #2676d1;
+  padding: 1px 2px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Footer a:hover {
+  background: rgb(0, 0, 0);
+  transition: all ease-in-out 0.2s;
+}
+
+.Footer a:active {
+  background: rgb(153, 218, 255);
+  transition: all ease-in-out 0.2s;
+}
+
+.md-title-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.md-title {
+  padding-left: 30px;
+}
+
+.md-filter {
+  padding-right: 30px;
+}
+
+.md-table-header h3 {
+  width: 100vw;
+}
+
+.md-selectOffences-container {
+  width: 310px;
+  color: #2676d1;
+}
+
+.md-table-header,
+.md-row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: left;
+  padding: 2px;
+  padding-left: 30px;
+
+}
+
+.md-col-citizenId,
+.md-col-date,
+.md-col-misdemeanor,
+.md-col-punishment {
+  text-align: left;
+  width: 100vw;
+}
+
+.md-col-punishment img {
+  border: 1px solid #1b1b1b;
+}
+
+@media all and (min-width: 600px) {}
+
+@media all and (min-width: 800px) {
+  .OutletPages {
+    flex: 3 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Header {
+    order: 1;
+  }
+
+  .OutletPages {
+    order: 2;
+  }
+
+  .footer {
+    order: 4;
   }
 }
