@@ -2,7 +2,7 @@
   "name": "router",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://k9design.github.io/router-testing",
+  "homepage": "https://k9design.github.io/router-testing/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^11.2.7",
